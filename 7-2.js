@@ -4,12 +4,7 @@ const fish = {
 }
   
 function ownProp (key, obj) {
-    if (key in obj) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return key in obj;
 }
     
 console.log(ownProp ("size", fish)) ;
